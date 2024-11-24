@@ -36,5 +36,4 @@ class Default(Provider):
     # get all top headlines
     def python_news( self) -> dict:
         pynews = requests.get( self.PYTHON_NEWS)
-        print( pynews.json())
         return pynews.json()
