@@ -1,0 +1,45 @@
+components:
+  # ------
+  - handle: news_secrets
+    name: storage.secret_store
+    provider:
+      name: env_file
+
+  - handle: news_component
+    name: custom.news_api
+    provider:
+      name: default
+      parameters:
+        api_key: "{{news_secrets.MY_NEWS_API_KEY}}"
+
+  # ------
+  - handle: news_api
+    name: interface.api
+    parameters:
+      component: "{{news_component}}"
+      host: 127.0.0.1
+      port: 8080
+    provider:
+      name: default
+      reload: true
+
+  - handle: news_api_for_docker
+    name: interface.api
+    parameters:
+      component: "{{news_component}}"
+      host: 0.0.0.0
+      port: 8080
+    provider:
+      name: default
+
+  - handle: news_docker_local
+    name: compute.container
+    parameters:
+      handle: news_api_for_docker
+      expose: 8081
+      requirements: requirements.txt
+    provider:
+      name: local
+      parameters:
+        ports:
+          "8080": 8081
