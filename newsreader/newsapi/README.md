@@ -119,6 +119,7 @@ You should get back a response like following
 ```
 
 Next, try the headlines operation to find the latest headlines.
+
 ```json
 {
   "operation": {
@@ -195,4 +196,65 @@ verse run --handle news_docker_local
 ```
 
 The docker hosted component starts running now. Much like befoer, access the service at **http://127.0.0.1:8081/docs**. Use the swagger UI to do a POST request to the API. And much like before you will get the response back promptly.
-å
+
+## Using Google Cloud
+
+More documentation to come later!!
+On Nov 24, 2024 ... this failed to startup. so documentation is partial
+
+https://console.cloud.google.com/apis/dashboard?pli=1&project=genii-pilots&organizationId=0
+
+create google project called : playverse1
+create project: playverse1
+
+install google cloud SDK = https://cloud.google.com/sdk/docs/install-sdk
+
+```sh
+gcloud auth login
+
+# tutorial at: https://cloud.google.com/sdk/auth_success
+
+gcloud config set project playverse1
+
+```
+
+Now let us run the verse
+
+go to verse for the pyproject.toml
+and run
+
+```sh
+
+poetry shell
+
+# now in venv
+
+# login in to gcloud
+gcloud auth login
+gcloud config set project playverse1
+
+# define manifest for gcloud
+# run verse
+verse run --handle news_docker_gcloud
+
+# this fails because of some google set up
+gcloud auth configure-docker
+
+## accept things (one time)
+# docker config saved in /Users/murali/.docker/config.json
+
+# rerun verse
+verse run --handle news_docker_gcloud
+
+# modify verse ...
+# /sdk/compute/verse/compute/container/providers/google_cloud_run.py: line 192 to make shell=false
+
+# repeat failure happens
+# Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+
+# visit "artifact registry" and enable it
+
+# rerun verse command
+
+# run the commamnd to enable google service
+gcloud services enable run.googleapis.com

@@ -43,3 +43,18 @@ components:
       parameters:
         ports:
           "8080": 8081
+
+# ------ ------ ------ ------ ------ ------
+
+  - handle: news_docker_gcloud
+    name: compute.container
+    parameters:
+      handle: news_api_for_docker
+      expose: 8080
+      requirements: requirements.txt
+    provider:
+      name: google_cloud_run
+      parameters:
+        project_id: playverse1
+        region: us-central1
+        service_name: playnews1
