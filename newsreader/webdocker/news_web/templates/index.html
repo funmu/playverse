@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>News Items</title>
+</head>
+<body>
+    <h1>News Items for the day</h1>
+    <table>
+<!--
+        <thead>
+            <tr>
+                <th>News Image</th>
+                <th>News Item</th>
+            </tr>
+        </thead>
+-->
+        <tbody>
+<!-- SAMPLE NEWS ARTICLE
+    {
+        "source": {
+            "id": null,
+            "name": "Page Six"
+        },
+        "author": "Sara Whitman",
+        "title": "James Kennedy's girlfriend, Ally Lewber, says she's 'taking time' to herself after his domestic violence arrest - Page Six",
+        "description": "The “Vanderpump Rules” star was taken into police custody after he was seen mingling with his astrologer girlfriend at Kathy Hilton’s Christmas party.",
+        "url": "https://pagesix.com/2024/12/14/celebrity-news/james-kennedys-girlfriend-ally-lewber-taking-time-after-his-domestic-violence-arrest/",
+        "urlToImage": "https://pagesix.com/wp-content/uploads/sites/3/2024/12/Ally-Lewber-responds-1.jpg?quality=75&strip=all&w=1024",
+        "publishedAt": "2024-12-14T23:06:00Z",
+        "content": "James Kennedys girlfriend, Ally Lewber, addressed his domestic violence arrest for the first time.\r\n“Thank you to everyone who has reached out with love and support and for checking in on me,” the Lo… [+4995 chars]"
+    }
+-->            
+            {% for item in items %}
+            <tr>
+                <td width="150">
+                    {% if item.urlToImage %} 
+                        <img src="{{ item.urlToImage }}" 
+                            width="140"
+                        />
+                    {% else %}
+                    {% endif %}
+                </td>                 
+                <td width="400">
+                    <table>
+                        <tr><a href="{{ item.url }}">{{ item.title }}</a></tr>
+                        <br/>
+                        <tr>
+                            <td>{{ item.author }} of {{ item.source.name }} 
+                            <br/> at {{ item.publishedAt }}</td>
+                        </tr>
+                        <br/>
+                        <tr> {{ item.description }}</tr>
+                    </table>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Item List</title>
+</head>
+<body>
+    <h1>Item List</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Property 1</th>
+                <th>Property 2</th>
+                <th>Property 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in items %}
+            <tr>
+                <td>{{ item.property1 }}</td>
+                <td>{{ item.property2 }}</td>
+                <td>{{ item.property3 }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
