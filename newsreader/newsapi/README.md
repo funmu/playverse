@@ -199,62 +199,163 @@ The docker hosted component starts running now. Much like befoer, access the ser
 
 ## Using Google Cloud
 
-More documentation to come later!!
-On Nov 24, 2024 ... this failed to startup. so documentation is partial
+### Set up Google Project
 
-https://console.cloud.google.com/apis/dashboard?pli=1&project=genii-pilots&organizationId=0
+- Visit the [Google Cloud Console](https://console.cloud.google.com)
+- Create a new project. Let us call it "playverse1"
+- Install google cloud SDK from [here](https://cloud.google.com/sdk/docs/install-sdk)
+- Configure the local connection to the Google Cloud project
 
-create google project called : playverse1
-create project: playverse1
+### Set up Google Cloud CLI
 
-install google cloud SDK = https://cloud.google.com/sdk/docs/install-sdk
+Login to Google cloud with your credentials and then set up the project. See [Google Cloud Auth Tutorial](https://cloud.google.com/sdk/auth_success)
 
 ```sh
 gcloud auth login
-
-# tutorial at: https://cloud.google.com/sdk/auth_success
 
 gcloud config set project playverse1
 
 ```
 
-Now let us run the verse
+### Let us run Verse
 
-go to verse for the pyproject.toml
-and run
+Now let us run the verse. Go to verse project and find the pyproject.toml
+Run the poetry configuration and then again set up the Google Cloud connection.
+Make sure to start Docker on the desktop before starting to run services.
 
 ```sh
 
 poetry shell
+```
 
-# now in venv
+### Google Cloud setup
 
-# login in to gcloud
+As a one time step, login and create a project on Google Cloud
+
+```sh
+
 gcloud auth login
 gcloud config set project playverse1
 
-# define manifest for gcloud
-# run verse
-verse run --handle news_docker_gcloud
+```
 
-# this fails because of some google set up
+### Go run your project on Google Cloud
+
+Visit your project and ensure there is the manifest.yaml.
+Include a new entry for the cloud hosted version of news API
+
+```yaml
+
+  - handle: news_docker_gcloud
+    name: compute.container
+    parameters:
+      handle: news_api_for_docker
+      expose: 8080
+      requirements: requirements.txt
+    provider:
+      name: google_cloud_run
+      parameters:
+        project_id: playverse1
+        region: us-central1
+        service_name: playnews1
+```
+
+Now use verse to start the docker image in the Google Cloud
+
+```sh
+
+verse run news_docker_gcloud
+```
+
+Get the URL location from the output and open the link within a browser.
+Access the /docs location to retrieve the FastAPI endpoint for testing the APIs.
+
+output in the console wil have the URL as shown
+
+```text
+
+result='https://playnews1-<FULL-PATH>' context=None native=None
+```
+
+Use the entire path at *https://playnews1-<FULL-PATH>/docs* in the browser
+
+Now you can try out your API operations using the "Try it out!" action.
+
+## Manual mode to run service on Google Cloud
+
+This was done as an experiment to try out steps independent of the vers runner
+
+### Set up Docker on Google Cloud
+
+```sh
 gcloud auth configure-docker
 
-## accept things (one time)
-# docker config saved in /Users/murali/.docker/config.json
+# accept the terms of agreement (one time thing) and save configuration
+# docker config saved in ~/.docker/config.json
 
-# rerun verse
+```
+
+In Google console, visit "artifact registry" and enable it for this project
+
+```sh
+
+# also enable google services
+gcloud services enable run.googleapis.com
+
+```
+
+### Special: Build image for Google docker
+
+There were issues with docker run from Verse.
+So we will attempt to run it on the side.
+
+Find the name of the Docker container on the site. It is likely located at gcr.io/projectname which is *gcr.io/playverse1*. Our project tag then will be
+
+```sh
+GCLOUD_PATH=gcr.io/playverse1/news_api_for_docker:v1
+
+# enable docker
+ gcloud auth configure-docker
+
+```
+
+### Special for MAC: enable cross platform Docker build
+
+On MAC, by default the images are built as *linux/arm64* which needs to be changed to *linux/amd64* for the Google Cloud and most cloud services. See [multi-platform docker](https://github.com/multiarch/qemu-user-static/blob/master/README.md) for more details
+
+```sh
+docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
+docker buildx create --use
+docker buildx inspect --bootstrap
+```
+
+Once that is done we can do the cross platform build as shown here. BTW, push also pushes the image out
+
+```sh
+# builds a docker container for amd64 and loads it inside the local Docker Desktop
+ docker buildx build --platform linux/amd64 -t $GCLOUD_PATH --load .
+
+# check the architecture type. should show amd64
+docker inspect news_api_for_docker | grep Arc
+
+# tag the image for my google cloud deployment
+docker tag news_api_for_docker $GCLOUD_PATH 
+
+# push the image to Google Cloud
+docker push $GCLOUD_PATH
+
+# inspect the image in google cloud
+gcloud artifacts docker images describe $GCLOUD_PATH
+
+```
+
 verse run --handle news_docker_gcloud
 
-# modify verse ...
-# /sdk/compute/verse/compute/container/providers/google_cloud_run.py: line 192 to make shell=false
+### Some useful Google Cloud Run commands
 
-# repeat failure happens
-# Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
-
-# visit "artifact registry" and enable it
-
-# rerun verse command
-
-# run the commamnd to enable google service
-gcloud services enable run.googleapis.com
+```sh
+gcloud run jobs list
+gcloud run services list
+gcloud run services describe playnews1 --region=us-central1
+gcloud run services delete playnews1 --region=us-central1
+```
