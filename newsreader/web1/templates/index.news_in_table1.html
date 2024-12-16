@@ -1,0 +1,55 @@
+<!--
+    index.news_in_table1.html
+
+    Render the news in a tabular format.
+    It is not the best representation, but helps to learn the ways to show things
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>News Items</title>
+</head>
+<body>
+    <h1>News Items for the day</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Source</th>
+                <th>Author</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>NEWS URL</th>
+                <th>Published At</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in items %}
+            <tr>
+                <td>{{ item.source.name }}</td>
+                <td>{{ item.author }}</td>
+                <td>{{ item.title }}</td>
+                <td>{{ item.description }}</td>
+                <td>{{ item.url }}</td>
+                <td>{{ item.publishedAt }}</td>
+<!-- SAMPLE NEWS ARTICLE
+    {
+        "source": {
+            "id": null,
+            "name": "Page Six"
+        },
+        "author": "Sara Whitman",
+        "title": "James Kennedy's girlfriend, Ally Lewber, says she's 'taking time' to herself after his domestic violence arrest - Page Six",
+        "description": "The “Vanderpump Rules” star was taken into police custody after he was seen mingling with his astrologer girlfriend at Kathy Hilton’s Christmas party.",
+        "url": "https://pagesix.com/2024/12/14/celebrity-news/james-kennedys-girlfriend-ally-lewber-taking-time-after-his-domestic-violence-arrest/",
+        "urlToImage": "https://pagesix.com/wp-content/uploads/sites/3/2024/12/Ally-Lewber-responds-1.jpg?quality=75&strip=all&w=1024",
+        "publishedAt": "2024-12-14T23:06:00Z",
+        "content": "James Kennedys girlfriend, Ally Lewber, addressed his domestic violence arrest for the first time.\r\n“Thank you to everyone who has reached out with love and support and for checking in on me,” the Lo… [+4995 chars]"
+    }
+-->
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

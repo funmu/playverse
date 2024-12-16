@@ -1,0 +1,36 @@
+{
+    "result": {
+        "status": "ok",
+        "totalResults": 34,
+        "articles": [
+            {
+                "source": {
+                    "id": null,
+                    "name": "Department of Defense"
+                },
+                "author": null,
+                "title": "Joint Staff Addresses Drones Over New Jersey Military Installations - Department of Defense",
+                "description": "A spokesperson from the Joint Staff acknowledged that there had been sightings of drones over two military installations in New Jersey, but said such sightings are typical.",
+                "url": "https://www.defense.gov/News/News-Stories/Article/Article/4002374/joint-staff-addresses-drones-over-new-jersey-military-installations/",
+                "urlToImage": "https://media.defense.gov/2024/Dec/14/2003612241/1280/1280/0/160308-N-RX384-0001.JPG",
+                "publishedAt": "2024-12-14T23:41:28Z",
+                "content": "In recent weeks, a number of drones have been sighted over New Jersey, prompting concern and thousands of telephone calls to report them. Some of those drones have even been sighted over Picatinny Ar… [+2854 chars]"
+            },
+            {
+                "source": {
+                    "id": "associated-press",
+                    "name": "Associated Press"
+                },
+                "author": "MICHAEL R. SISAK",
+                "title": "ABC agrees to give $15 million to Donald Trump's presidential library to settle defamation lawsuit - The Associated Press",
+                "description": "ABC News has agreed to pay $15 million toward Donald Trump’s presidential library to settle a lawsuit over anchor George Stephanopoulos' inaccurate on-air assertion that the president-elect had been found civilly liable for raping writer E. Jean Carroll. ABC …",
+                "url": "https://apnews.com/article/abc-trump-lawsuit-defamation-stephanopoulos-04aea8663310af39ae2a85f4c1a56d68",
+                "urlToImage": "https://dims.apnews.com/dims4/default/94224a8/2147483647/strip/true/crop/3000x1688+0+156/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F55%2F09%2Ff1c974f2c23a44f5287639e9b5d0%2F07511248e1bb437b83cf5bdeea5c0081",
+                "publishedAt": "2024-12-14T23:25:00Z",
+                "content": "NEW YORK (AP) ABC News has agreed to pay $15 million toward Donald Trumps presidential library to settle a defamation lawsuit over anchor George Stephanopoulos inaccurate on-air assertion that the pr… [+4797 chars]"
+            }
+        ]
+    },
+    "context": null,
+    "native": null
+}

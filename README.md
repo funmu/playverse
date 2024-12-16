@@ -4,4 +4,7 @@ Verse is a new framework for building services. With its component and provider 
 
 ## Newsreader
 
-A simple service that wraps the newsapi.org services. This service also illustrates how easy it is to build with Verse. See [newsreader](./newsreader/) for details.
+A simple service that wraps the newsapi.org services. This service also illustrates how easy it is to build with Verse. See [newsreader](./newsreader/) for details. 
+
+- See [News API](./newsreader/newsapi/) for the API implemented and hosted using *verse* framework
+- See [News Web1](./newsreader/web1) for a simple web client built using python/flask
