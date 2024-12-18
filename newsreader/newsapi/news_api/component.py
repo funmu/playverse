@@ -21,3 +21,9 @@ class CustomComponent(Component):
 
     @operation()
     def python_news( self) -> str: pass
+
+    @operation()
+    def india_headlines( self) -> str: pass
+
+    @operation()
+    def latest( self, scope: str) -> str: pass
