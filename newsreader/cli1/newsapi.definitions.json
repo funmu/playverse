@@ -9,23 +9,20 @@
   },
   "headlines": {
     "help": "Get the US news headlines",
-    "url": "https://api.example.com/",
+    "url": "http://localhost:8080",
     "method": "POST",
     "queryParams": {
     }
   },
   "latest": {
     "help": "Get the Latest news for specific topics",
-    "url": "https://api.example.com/",
+    "url": "http://localhost:8080",
     "method": "POST",
-    "queryParams": {
+    "bodyParams": {
       "scope": { "help": "scope news to this specific area", "required": true }
-    },
-    "inputFile": {
-      "help": "JSON file with user data"
     }
   },
-  "future_file_operation": {
+  "file_operation": {
     "help": "Demonstrate use of inputFile for a future file based operation",
     "url": "https://api.example.com/future_file_operation",
     "method": "POST",
