@@ -1,7 +1,7 @@
 # ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
-#  cliverse.py
+#  stverse.py
 #
-#  helpers for creating and using CLI with Verse operations
+#  helpers for creating and using Streamlit with Verse operations
 #
 #  Created: Murali Krishnan, Dec 19, 2024
 # ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
@@ -9,16 +9,17 @@
 # ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
 #  JSON helpers
 import json
+import streamlit as st
 
 class JsonHelpers:
 
-    def load_rest_operations( self, input_file):
+    def load_rest_operations( self, serviceName: str, input_file: str):
         """Loads REST operations from a JSON file."""
         try:
             with open(input_file, 'r') as f:
                 return json.load(f)
         except (FileNotFoundError, json.JSONDecodeError) as e:
-            print(f"Error loading {SERVICE_NAME} REST operations: {e}")
+            st.error(f"Error loading {serviceName} REST operations: {e}")
             exit(1)
 
     def pretty_print_json( self, json_data):
@@ -33,18 +34,20 @@ class JsonHelpers:
             try:
                 json_data = json.loads(json_data)
             except json.JSONDecodeError as e:
-                print(f"Error: Invalid JSON string: {e}")
+                st.error(f"Error: Invalid JSON string: {e}")
             return
 
-        print(json.dumps(json_data, indent=4, sort_keys=True))
+        st.json(json_data)
+        # print(json.dumps(json_data, indent=4, sort_keys=True))
 
 # ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
 #  Set up commad line parsers
+
 import sys
 import argparse
 import requests
 
-class CliRunner:
+class StRunner:
 
     operations = None
     cliParser = None
@@ -119,7 +122,7 @@ class CliRunner:
 
         op_data = operations_data.get(operation)
         if not op_data:
-            print(f"Invalid operation: {operation}")
+            st.error(f"Invalid operation: {operation}")
             exit(1)
 
         # Use URL from command line argument if provided, otherwise use default from operations.json
@@ -138,7 +141,7 @@ class CliRunner:
         #         with open(args.input_file, 'r') as f:
         #             data = json.load(f)  # Assuming JSON input, adjust as needed
         #     except (FileNotFoundError, json.JSONDecodeError) as e:
-        #         print(f"Error reading input file: {e}")
+        #         st.error(f"Error reading input file: {e}")
         #         exit(1)
         # else:
         #     data = {}
@@ -161,5 +164,5 @@ class CliRunner:
             response.raise_for_status()
             return response.json()
         except requests.exceptions.RequestException as e:
-            print(f"Error executing operation: {e}")
+            st.error(f"Error executing operation: {e}")
             return None
