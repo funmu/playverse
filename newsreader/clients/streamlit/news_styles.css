@@ -1,0 +1,25 @@
+.item-container {
+    display: flex;
+    align-items: center;
+  }
+  .image {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+  .results-container {
+    max-height: 500px;
+    overflow-y: auto;
+  }
+  
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .description {
+    font-size: 10px;
+  }
+  .footer {
+    font-size: 8px;
+    color: silver;
+  }

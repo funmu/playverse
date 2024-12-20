@@ -52,6 +52,42 @@ class StRunner:
     def __init__(self, serviceName: str):
         self.serviceName = serviceName
 
+    def show_pretty_results( self, filteredItems):
+
+        for item in filteredItems:
+            footer = item["author"] + " of " \
+                + item["source"]["name"] \
+                + ", " + item["publishedAt"]
+
+            st.markdown('<div class="item-container">', unsafe_allow_html=True)
+            if ( item["urlToImage"] != None):
+                st.image(item["urlToImage"], width=140)  # Display the image
+
+            st.markdown('<div>', unsafe_allow_html=True)  # Create a div for text content
+            st.markdown(f'<p class="title"><a href="{item["url"]}" target="_blank">{item["title"]}</a></p>', unsafe_allow_html=True)
+            st.markdown(f'<p class="description">{item["description"]}</p>', unsafe_allow_html=True)
+            st.markdown(f'<p class="footer">{footer}</p>', unsafe_allow_html=True)
+
+            st.markdown('</div>', unsafe_allow_html=True)  # Close the text content div
+            st.markdown('</div>', unsafe_allow_html=True)  # Close the item container div
+
+            st.write("--------")  # Add a separator between items
+
+    def show_results( self, displayType, responseJson):
+
+        st.header( self.serviceName + " Results")
+        articles = responseJson["result"]["articles"]
+        filteredItems = [item for item in articles if item.get('title') != "[Removed]"]
+
+        with st.container():
+            # st.json(responseJson(), height=500)  # Adjust height as needed
+            st.markdown('<div class="results-container">', unsafe_allow_html=True)
+            if (displayType == 'json'):
+                st.json( filteredItems)
+            else:
+                self.show_pretty_results( filteredItems)
+            st.markdown('</div>', unsafe_allow_html=True)
+
     def execute_operation( self, operation, params, bodyParams, operations_data):
         """
             Executes the specified REST operation.
@@ -67,16 +103,9 @@ class StRunner:
             'Content-Type': 'application/json' 
         })
 
-        try:
-            response = requests.request(method, url, headers=headers, params=params, json=bodyParams)
-            response.raise_for_status()
-            with st.container():
-                # st.json(response.json(), height=500)  # Adjust height as needed
-                st.markdown('<div class="results-container">', unsafe_allow_html=True)
-                st.json( response.json())
-                st.markdown('</div>', unsafe_allow_html=True)
-        except requests.exceptions.RequestException as e:
-            st.error(f"Error executing operation: {e}")
+        response = requests.request(method, url, headers=headers, params=params, json=bodyParams)
+        response.raise_for_status()
+        return response.json()
 
     # ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
     #  Do Operations
@@ -119,7 +148,12 @@ class StRunner:
         #         except json.JSONDecodeError:
         #             st.error("Invalid JSON format in input data")
 
+            displayType = st.radio("Select Display", ['json', 'pretty'])
+
             if st.button("Execute"):
-                with right_column:
-                    st.header( self.serviceName + " Results")
-                    self.execute_operation(operation, queryParams, bodyParams, operations_data)
+                try:
+                    resultsJson = self.execute_operation(operation, queryParams, bodyParams, operations_data)
+                    with right_column:
+                        self.show_results( displayType, resultsJson)
+                except requests.exceptions.RequestException as e:
+                    st.error(f"Error executing operation: {e}")

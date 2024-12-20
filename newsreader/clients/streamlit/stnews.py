@@ -16,19 +16,11 @@ import requests
 from stverse import JsonHelpers, StRunner
 import streamlit as st
 
-styles = """
-<style>
-.results-container {
-  max-height: 500px;
-  overflow-y: auto;
-}
-</style>
-"""
-
 def main():
     # Set the page layout to 'wide' at the very beginning
     st.set_page_config(layout="wide")
-    st.markdown(styles, unsafe_allow_html=True)
+    with open('news_styles.css') as f:
+        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)    
 
     st.title("News using news API")
 
