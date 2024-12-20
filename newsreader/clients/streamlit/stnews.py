@@ -16,70 +16,28 @@ import requests
 from stverse import JsonHelpers, StRunner
 import streamlit as st
 
-def execute_operation(operation, params, bodyParams, operations_data):
-    """
-        Executes the specified REST operation.
-    """
-    op_data = operations_data.get(operation)
-    if not op_data:
-        st.error(f"Invalid operation: {operation}")
-        return
-
-    url = op_data['url']
-    method = op_data['method']
-    headers = op_data.get('headers', {
-        'Content-Type': 'application/json' 
-    })
-
-    print( f"sending request to {url} for operation: {operation}")
-    print( f"with headers {headers}")
-    print( f"with body {bodyParams}")
-
-    try:
-        response = requests.request(method, url, headers=headers, params=params, json=bodyParams)
-        response.raise_for_status()
-        st.json(response.json())
-    except requests.exceptions.RequestException as e:
-        st.error(f"Error executing operation: {e}")
+styles = """
+<style>
+.results-container {
+  max-height: 500px;
+  overflow-y: auto;
+}
+</style>
+"""
 
 def main():
+    # Set the page layout to 'wide' at the very beginning
+    st.set_page_config(layout="wide")
+    st.markdown(styles, unsafe_allow_html=True)
+
     st.title("News using news API")
 
     jsonHelpers = JsonHelpers()
     operations_data = jsonHelpers.load_rest_operations( SERVICE_NAME, SERVICE_DEFINITIONS)
+
     if operations_data:
-        operation = st.selectbox("Select operation", list(operations_data.keys()))
-        op_data = operations_data[operation]
-
-        queryParams = {}
-        for param_name, param_data in op_data.get('queryParams', {}).items():
-            queryParams[param_name] = st.text_input(param_data.get('help', param_name), value=param_data.get('default', ''))
-
-        opArgs = {}
-        for param_name, param_data in op_data.get('bodyParams', {}).items():
-            opArgs[param_name] = st.text_input(param_data.get('help', param_name), value=param_data.get('default', ''))
-
-        # name: op_data.get('operationName', operation),  # Use operation name from definition or default to operation key
-
-        bodyParams = {
-            "operation": {
-                "name": operation,
-                "args": opArgs
-            }
-        }
-
-        # for importing in file data
-        # input_data = {}
-        # if 'inputFile' in op_data:
-        #     input_file_content = st.text_area("Input data (JSON)")
-        #     if input_file_content:
-        #         try:
-        #             input_data = json.loads(input_file_content)
-        #         except json.JSONDecodeError:
-        #             st.error("Invalid JSON format in input data")
-
-        if st.button("Execute"):
-            execute_operation(operation, queryParams, bodyParams, operations_data)
+        stRunner = StRunner( SERVICE_NAME)
+        stRunner.showMainScreen( operations_data)
 
 if __name__ == "__main__":
     main()

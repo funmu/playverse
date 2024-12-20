@@ -43,126 +43,83 @@ class JsonHelpers:
 # ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
 #  Set up commad line parsers
 
-import sys
-import argparse
 import requests
 
 class StRunner:
 
-    operations = None
-    cliParser = None
+    serviceName: str = "ST CLIENT"
 
-    def _create_main_parser( self, serviceName: str):
+    def __init__(self, serviceName: str):
+        self.serviceName = serviceName
 
-        cliName = serviceName+"_cli"
-        cliDescription = "CLI for using the " + serviceName
-
-        parser = argparse.ArgumentParser(
-            prog = cliName,
-            description = cliDescription,
-            epilog="Thanks for using " + cliName
-            )
-        parser.add_argument( "operation", help="operation to be conducted")
-
-        # Use follwoing if we want to configure where the service definitions come from
-        # parser.add_argument("--ops", help="Override the default operations definitions using this file")  
-    
-        # Add argument for URL to send the request to
-        parser.add_argument("--url", help="Override the default URL for the operation")  
-
-        return parser
-
-    def create_cli( self, serviceName: str, operation_definitions_json_file: str):
+    def execute_operation( self, operation, params, bodyParams, operations_data):
         """
-        Creates a CLI sub parsers based on REST operations.
+            Executes the specified REST operation.
         """
+        op_data = operations_data.get(operation)
+        if not op_data:
+            st.error(f"Invalid operation: {operation}")
+            return
 
-        self.cliParser = self._create_main_parser( serviceName)
+        url = op_data['url']
+        method = op_data['method']
+        headers = op_data.get('headers', {
+            'Content-Type': 'application/json' 
+        })
 
-        jsonHelpers = JsonHelpers()
-        self.operations = jsonHelpers.load_rest_operations(operation_definitions_json_file)
-
-        subparsers = self.cliParser.add_subparsers(dest='operation', required=True)
-
-        for op_name, op_data in self.operations.items():
-            
-            subparser = subparsers.add_parser(op_name, help=op_data.get('help', ''))
-
-            # Add arguments for query parameters
-            for param_name, param_data in op_data.get('queryParams', {}).items():
-                subparser.add_argument(f"--{param_name}", help=param_data.get('help', ''), required=param_data.get('required', False))
-
-            for param_name, param_data in op_data.get('bodyParams', {}).items():
-                subparser.add_argument(f"--{param_name}", help=param_data.get('help', ''), required=param_data.get('required', False))
-
-            # Add argument for input file
-            if 'inputFile' in op_data:
-                subparser.add_argument("input_file", help=op_data['inputFile'].get('help', ''))
-
-        return self.cliParser
+        try:
+            response = requests.request(method, url, headers=headers, params=params, json=bodyParams)
+            response.raise_for_status()
+            with st.container():
+                # st.json(response.json(), height=500)  # Adjust height as needed
+                st.markdown('<div class="results-container">', unsafe_allow_html=True)
+                st.json( response.json())
+                st.markdown('</div>', unsafe_allow_html=True)
+        except requests.exceptions.RequestException as e:
+            st.error(f"Error executing operation: {e}")
 
     # ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
     #  Do Operations
 
-    def execute_operation( self, inputArgs):
-        """
-        
-        Executes the specified REST operation.
+    def showMainScreen( self, operations_data):
 
-        Returns:
-            JSON results; None if there was an error
-        
-        """
-
-        cli_args = self.cliParser.parse_args( inputArgs)
-
-        operation = cli_args.operation
-        args = cli_args
-        operations_data = self.operations
-
-        op_data = operations_data.get(operation)
-        if not op_data:
-            st.error(f"Invalid operation: {operation}")
-            exit(1)
-
-        # Use URL from command line argument if provided, otherwise use default from operations.json
-        # url = args.url if args.url else op_data['url'] 
-        url =  op_data['url']
-
-        method = op_data['method']
-        headers = op_data.get('headers', {})
-
-        # Construct query parameters
-        queryParams = {param: getattr(args, param) for param in op_data.get('queryParams', {})}
-
-        # Read data from input file if specified
-        # if 'inputFile' in op_data:
-        #     try:
-        #         with open(args.input_file, 'r') as f:
-        #             data = json.load(f)  # Assuming JSON input, adjust as needed
-        #     except (FileNotFoundError, json.JSONDecodeError) as e:
-        #         st.error(f"Error reading input file: {e}")
-        #         exit(1)
-        # else:
-        #     data = {}
-
-        # Construct the POST body data
+        left_column, right_column = st.columns([0.2, 0.8])
         opArgs = {}
-        for param in op_data.get('bodyParams', {}):
-            opArgs[param] = getattr(args, param)
-        
-        data = {
-            "operation": {
-                "name": op_data.get('operationName', operation),  # Use operation name from definition or default to operation key
-                "args": opArgs
-            }
-        }
+        queryParams = {}
+        operation = "hello"
 
-        try:
-            response = requests.request(method, url, 
-                headers=headers, params=queryParams, json=data)
-            response.raise_for_status()
-            return response.json()
-        except requests.exceptions.RequestException as e:
-            st.error(f"Error executing operation: {e}")
-            return None
+        with left_column:
+            st.header( self.serviceName + " Operations")
+            if operations_data:
+                operation = st.selectbox("Select operation", list(operations_data.keys()))
+                op_data = operations_data[operation]
+
+            for param_name, param_data in op_data.get('queryParams', {}).items():
+                queryParams[param_name] = st.text_input(param_data.get('help', param_name), value=param_data.get('default', ''))
+
+            for param_name, param_data in op_data.get('bodyParams', {}).items():
+                opArgs[param_name] = st.text_input(param_data.get('help', param_name), value=param_data.get('default', ''))
+
+        # name: op_data.get('operationName', operation),  # Use operation name from definition or default to operation key
+
+            bodyParams = {
+                "operation": {
+                    "name": operation,
+                    "args": opArgs
+                }
+            }
+
+        # for importing in file data
+        # input_data = {}
+        # if 'inputFile' in op_data:
+        #     input_file_content = st.text_area("Input data (JSON)")
+        #     if input_file_content:
+        #         try:
+        #             input_data = json.loads(input_file_content)
+        #         except json.JSONDecodeError:
+        #             st.error("Invalid JSON format in input data")
+
+            if st.button("Execute"):
+                with right_column:
+                    st.header( self.serviceName + " Results")
+                    self.execute_operation(operation, queryParams, bodyParams, operations_data)
