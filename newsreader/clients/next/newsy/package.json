@@ -60,14 +60,14 @@
     "zod": "^3.24.1"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^22",
-    "@types/react": "^19",
+    "@eslint/eslintrc": "^3",
+    "@types/node": "22.10.5",
+    "@types/react": "19.0.3",
     "@types/react-dom": "^19",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.17",
     "eslint": "^9",
     "eslint-config-next": "15.1.4",
-    "@eslint/eslintrc": "^3"
+    "postcss": "^8",
+    "tailwindcss": "^3.4.17",
+    "typescript": "5.7.3"
   }
 }
