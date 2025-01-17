@@ -15,3 +15,4 @@
 - Web Experience for users to consume news
 - Backend parts that provides list of news
 - Ancillary parts: Deployment, Management, Monitoring
+

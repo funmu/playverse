@@ -4,3 +4,5 @@
 __pycache__/
 .DS_Store
 /newsreader/samples
+/facenews/news_ui/.next
+/facenews/news_ui/node_modules

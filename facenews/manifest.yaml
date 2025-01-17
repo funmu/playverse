@@ -37,8 +37,9 @@ components:
       host: 127.0.0.1
       port: 8080
     provider:
-      name: default
-      reload: true
+      name: nextjs    # nextjs is our provider that configures the UI
+      parameters:
+        reload: true
 
   # ------ ------ ------ ------ ------ ------
   # ------ Prepare for Docker HOSTING
