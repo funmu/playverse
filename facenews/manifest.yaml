@@ -1,0 +1,81 @@
+# ----- ----- ----- ----- ----- ----- ----- ----- ----- 
+#  FaceNews - NEWS experience constructed using FaceVerse
+# 
+#  Created: Jan 17, 2025
+# 
+
+components:
+  # ------
+  - handle: news_secrets
+    name: storage.secret_store
+    provider:
+      name: env_file
+
+  - handle: news_component
+    name: custom.news_component
+    provider:
+      name: default
+      parameters:
+        api_key: "{{news_secrets.MY_NEWS_API_KEY}}"
+
+  # ------ LOCAL API
+  - handle: news_api
+    name: interface.api
+    parameters:
+      component: "{{news_component}}"
+      host: 127.0.0.1
+      port: 8080
+    provider:
+      name: default
+      reload: true
+
+# ------ UI for the COMPONENT : depends on news_component and (p2) google_analytics
+  - handle: news_ui
+    name: interface.ui
+    parameters:
+      component: "{{news_component}}"
+      host: 127.0.0.1
+      port: 8080
+    provider:
+      name: default
+      reload: true
+
+  # ------ ------ ------ ------ ------ ------
+  # ------ Prepare for Docker HOSTING
+  - handle: news_api_for_docker
+    name: interface.api
+    parameters:
+      component: "{{news_component}}"
+      host: 0.0.0.0
+      port: 8080
+    provider:
+      name: default
+
+  # ------ LOCAL Docker
+  - handle: news_docker_local
+    name: compute.container
+    parameters:
+      handle: news_api_for_docker
+      expose: 8081
+      requirements: requirements.txt
+    provider:
+      name: local
+      parameters:
+        ports:
+          "8080": 8081
+
+# ------ ------ ------ ------ ------ ------
+# ------ DOCKER on Google Cloud
+
+  - handle: news_docker_gcloud
+    name: compute.container
+    parameters:
+      handle: news_api_for_docker
+      expose: 8080
+      requirements: requirements.txt
+    provider:
+      name: google_cloud_run
+      parameters:
+        project_id: playverse1
+        region: us-central1
+        service_name: playnews1
