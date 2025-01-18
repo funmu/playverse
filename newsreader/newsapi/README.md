@@ -18,14 +18,28 @@ class CustomComponent(Component):
     @operation()
     def hello(self) -> str: pass
 
+    # get all top headlines
     @operation()
-    def headlines( self) -> str: pass
+    def headlines( self, country="us") -> str: pass
 
+    # get the latest news for given area of scope
     @operation()
-    def python_news( self) -> str: pass
+    def latest( self, scope: str="technology") -> str: pass
+
+    # get the headlines by country
+    @operation()
+    def headlinesByCountry( self, country="us"): pass
+
+    # get the sources for getting news from
+    @operation()    
+    def sources( self): pass
+    
+    # get the headlines by source; default is from reuters
+    @operation()    
+    def headlinesBySource( self, source="reuters"): pass    
 ```
 
-NOTE: *This component.py in the starting folder is a reseved file that the system uses to launch the app.* There are three methods defined now. The *hello* method is used for simple ping testing. For news we expose two functions: *headlines* and *python_news*
+NOTE: *This component.py in the starting folder is a reseved file that the system uses to launch the app.* There are three methods defined now. The *hello* method is used for simple ping testing. For news we expose a handful of functions including *headlines*, *sources", and *headlinesBySource*
 
 ### Define a provider
 
@@ -128,7 +142,30 @@ Next, try the headlines operation to find the latest headlines.
 }
 ```
 
-The response will consist of JSON formatted resposne from the NewsAPI.org service.
+Next, try the sources operation to find the list of sources.
+
+```json
+{
+  "operation": {
+    "name": "sources"
+  }
+}
+```
+
+The response will consist of JSON formatted list of supported sources.
+
+Finally, let us try to fetch news from a single source
+
+```json
+{
+  "operation": {
+    "name": "headlinesBySources",
+    "args": { "source": "bloomberg" }
+  }
+}
+```
+
+The response will consist of JSON formatted list of news from Bloomberg.
 
 ### Congrats - you got a local server
 

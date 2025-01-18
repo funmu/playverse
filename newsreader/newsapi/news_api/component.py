@@ -16,14 +16,22 @@ class CustomComponent(Component):
     @operation()
     def hello(self) -> str: pass 
 
+    # get all top headlines
     @operation()
-    def headlines( self) -> str: pass
+    def headlines( self, country="us") -> str: pass
 
+    # get the latest news for given area of scope
     @operation()
-    def python_news( self) -> str: pass
+    def latest( self, scope: str="technology") -> str: pass
 
+    # get the headlines by country
     @operation()
-    def india_headlines( self) -> str: pass
+    def headlinesByCountry( self, country="us"): pass
 
-    @operation()
-    def latest( self, scope: str) -> str: pass
+    # get the sources for getting news from
+    @operation()    
+    def sources( self): pass
+    
+    # get the headlines by source; default is from reuters
+    @operation()    
+    def headlinesBySource( self, source="reuters"): pass
