@@ -91,6 +91,10 @@ class Default(Provider):
         return self.ALL_SOURCES;
 
     # get the headlines by source; default is from reuters
-    def headlinesBySource( self, source="reuters") -> dict:
-        return self._getNews(  f"headlines by sources = {source}", self.NEWS_BY_SOURCE + source)
+    def headlinesBySource( self, source="reuters", scope="") -> dict:
+        urlQuery = source
+        if ( scope != ""):
+            urlQuery = urlQuery + "&q=" + scope
+
+        return self._getNews(  f"headlines by sources = {urlQuery}", self.NEWS_BY_SOURCE + urlQuery)
 

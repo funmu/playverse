@@ -34,4 +34,4 @@ class CustomComponent(Component):
     
     # get the headlines by source; default is from reuters
     @operation()    
-    def headlinesBySource( self, source="reuters"): pass
+    def headlinesBySource( self, source="reuters", scope=""): pass
