@@ -65,7 +65,7 @@ struct NewsverseApp: App {
     // register app delegate for global app events
     @UIApplicationDelegateAdaptor(NewsverseAppDelegate.self) var delegate
 #endif
-
+    /*
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
@@ -78,6 +78,7 @@ struct NewsverseApp: App {
             fatalError("Could not create ModelContainer: \(error)")
         }
     }()
+    */
     
     // set up global structures of interest here
     init() {
@@ -89,12 +90,12 @@ struct NewsverseApp: App {
             MainContentView()
                 .preferredColorScheme(.dark)
         }
-        .modelContainer(sharedModelContainer)
+//        .modelContainer(NewsVerseModelContainer.shared.container)
     }
 }
 
 #Preview {
     MainContentView()
-        .modelContainer(for: Item.self, inMemory: true)
+//        .modelContainer(for: Item.self, inMemory: true)
         .environment(\.colorScheme, .dark)
 }

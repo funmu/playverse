@@ -104,7 +104,7 @@ struct NewsDetailView: View {
 
 #Preview {
     
-    var newsItem = NewsItem(
+    let newsItem = NewsItem(
         title: "The Morning After: What to expect at CES 2025",
         description: "The holidays haven’t even kicked off, but we’re already looking to next year when, almost immediately, some of the Engadget team will head to Las Vegas for tech’s biggest annual conference. The pitches from companies, both legit and unhinged, are already fill…",
         url: "https://www.engadget.com/general/the-morning-after-engadget-newsletter-121528225.html",

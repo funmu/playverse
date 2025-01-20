@@ -12,6 +12,7 @@ import SwiftData
 struct NewsListView: View {
     
     @ObservedObject private var newsListModel = NewsListModel()
+    @ObservedObject private var newsSources = NewsConfig.shared.newsSources
 
     var body: some View {
         VStack {
@@ -35,19 +36,24 @@ struct NewsListView: View {
                     .padding(.leading, -10)
                     .padding(.trailing, -10)
                 }
+                .onAppear() {
+                    self.newsListModel.fetchNewsItems(
+                        forSource: newsSources.contentSource,
+                        withType: newsSources.contentType
+                    )
+                }
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        ShowSettingsButton()
+                    }
+                }
+                .navigationBarTitle( newsSources.sourceTitle)
+                .navigationBarTitleDisplayMode(.inline) // Display the title inline
 #if os(macOS)
                 .navigationSplitViewColumnWidth(min: 180, ideal: 200)
 #endif
             }
-            .onAppear() {
-                self.newsListModel.fetchNewsItems(
-                    forSource: NewsConfig.shared.newsSources.contentSource,
-                    withType: NewsConfig.shared.newsSources.contentType
-                )
-            }
-            //        .navigationTitle( NewsConfig.shared.newsSources.sourceTitle)
-            //        .navigationBarTitle( NewsConfig.shared.newsSources.sourceTitle)
-            //        .navigationBarTitleDisplayMode(.inline) // Display the title inline
+
         }
     }
 }
