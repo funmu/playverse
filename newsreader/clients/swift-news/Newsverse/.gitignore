@@ -1,0 +1,7 @@
+
+# Ignore configuration files with sensitive keys
+Configs/*.xcconfig
+*.xcconfig
+
+Newsverse.xcodeproj/xcshareddata/
+

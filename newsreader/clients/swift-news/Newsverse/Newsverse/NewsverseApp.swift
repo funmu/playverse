@@ -39,8 +39,20 @@ struct MainContentView: View {
             Text("Newsverse")
                 .font(.title)
                 .foregroundColor( .accentColor)
-            NewsListView()
-                .foregroundColor( .accentColor)
+            TabView {
+                NewsListView()
+                    .foregroundColor( .accentColor)
+                    .tabItem {
+                        Image(systemName: "list.bullet")
+                        Text("News")
+                    }
+                SettingsView()
+                    .foregroundColor( .accentColor)
+                    .tabItem {
+                        Image( systemName: "gear")
+                        Text("Settings")
+                    }
+            }
         }
     }
 }

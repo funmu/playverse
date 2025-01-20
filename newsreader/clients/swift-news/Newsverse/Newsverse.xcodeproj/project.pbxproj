@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6A0CB19C2D3DC5B1009A9176 /* Newsverse.prod.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 6A0CB19B2D3DC5B1009A9176 /* Newsverse.prod.xcconfig */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		6A0CB1632D3D87F0009A9176 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,11 +31,25 @@
 		6A0CB14F2D3D87EF009A9176 /* Newsverse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Newsverse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A0CB1622D3D87F0009A9176 /* NewsverseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsverseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A0CB16C2D3D87F0009A9176 /* NewsverseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsverseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A0CB19B2D3DC5B1009A9176 /* Newsverse.prod.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Newsverse.prod.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		6A0CB1A62D3DD57A009A9176 /* Exceptions for "Newsverse" folder in "Newsverse" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 6A0CB14E2D3D87EF009A9176 /* Newsverse */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		6A0CB1512D3D87EF009A9176 /* Newsverse */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				6A0CB1A62D3DD57A009A9176 /* Exceptions for "Newsverse" folder in "Newsverse" target */,
+			);
 			path = Newsverse;
 			sourceTree = "<group>";
 		};
@@ -75,6 +93,7 @@
 		6A0CB1462D3D87EF009A9176 = {
 			isa = PBXGroup;
 			children = (
+				6A0CB19A2D3DC549009A9176 /* Configs */,
 				6A0CB1512D3D87EF009A9176 /* Newsverse */,
 				6A0CB1652D3D87F0009A9176 /* NewsverseTests */,
 				6A0CB16F2D3D87F0009A9176 /* NewsverseUITests */,
@@ -90,6 +109,14 @@
 				6A0CB16C2D3D87F0009A9176 /* NewsverseUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		6A0CB19A2D3DC549009A9176 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				6A0CB19B2D3DC5B1009A9176 /* Newsverse.prod.xcconfig */,
+			);
+			path = Configs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A0CB19C2D3DC5B1009A9176 /* Newsverse.prod.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +415,7 @@
 		};
 		6A0CB1772D3D87F0009A9176 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A0CB19B2D3DC5B1009A9176 /* Newsverse.prod.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -398,6 +427,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_FILE[sdk=*]" = "$(PROJECT_DIR)/Newsverse/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -408,7 +438,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -427,6 +457,7 @@
 		};
 		6A0CB1782D3D87F0009A9176 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A0CB19B2D3DC5B1009A9176 /* Newsverse.prod.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -438,6 +469,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_FILE[sdk=*]" = "$(PROJECT_DIR)/Newsverse/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -448,7 +480,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
