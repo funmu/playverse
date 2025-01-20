@@ -22,10 +22,10 @@ struct NewsImageView: View {
         } placeholder: {
             Rectangle()
                 .fill(Color.yellow.opacity(0.1))
-                .frame(width: 300, height: 100)
+                .frame(width: 300, height: 200)
                 .cornerRadius(10)
         }
-        .frame(maxHeight: .infinity)
+       .frame(maxHeight: 200)
     }
 }
 
@@ -39,6 +39,34 @@ struct NewsWebView: UIViewRepresentable {
     }
 
     func updateUIView(_ webView: WKWebView, context: Context) {}
+}
+
+struct ShareButton: View {
+    
+    let item: NewsItem
+    
+    var body: some View {
+        
+        Button( action: { shareNewsButton()})
+        {
+            Image(systemName: "square.and.arrow.up")
+                .foregroundColor(.accentColor)
+        }
+    }
+    
+    func shareNewsButton() {
+        let url = URL( string: item.url)
+
+        let avc = UIActivityViewController(
+            activityItems: [url!],
+            applicationActivities: nil)
+        
+        // Present the activity view controller
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+           let rootViewController = windowScene.windows.first?.rootViewController {
+            rootViewController.present( avc, animated: true, completion: nil)
+        }
+    }
 }
 
 struct NewsDetailView: View {
@@ -65,13 +93,14 @@ struct NewsDetailView: View {
                 Text( item.url)
                     .foregroundColor( .blue)
             }
-            Spacer()
             Text( item.description ?? "")
                 .foregroundColor( .secondary)
+                .padding( 10)
+            Spacer()
         }
+        .navigationBarItems(trailing: ShareButton(item: item))
     }
 }
-
 
 #Preview {
     

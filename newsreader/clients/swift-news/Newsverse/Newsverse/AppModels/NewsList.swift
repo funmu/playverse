@@ -76,6 +76,8 @@ class NewsListProvider {
 class NewsListModel: ObservableObject {
     
     @Published var newsItems = [NewsItem]()
+    @Published var newsFromSource: String = ""
+    @Published var newsFromType: String = ""
     
     func fetchNewsItems(forSource source: String, withType type: String) {
         
@@ -83,6 +85,13 @@ class NewsListModel: ObservableObject {
         let urlForNews = "\(newsProvider.urlPrefix)\(type)?sources=\(source)&apiKey=\(newsProvider.apiKey)"
         NewsConfig.logger.info("Fetching news from [\(source)] for [\(type)]")
 //        NewsConfig.logger.info("URL is\(urlForNews)")
+        
+        if ( (source.isEmpty || (source == newsFromSource)
+              || type.isEmpty || (type == newsFromType)) ) {
+            
+            NewsConfig.logger.debug("Input parameters are similar to what we have already. Do not fetch news.")
+            return
+        }
         
         guard let url = URL(string: urlForNews) else {
             NewsConfig.logger.error("Invalid NEWS URL: \(urlForNews)")

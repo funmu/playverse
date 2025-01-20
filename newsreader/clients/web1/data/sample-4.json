@@ -1,0 +1,1308 @@
+{
+    "status": "ok",
+    "totalResults": 1344,
+    "source": "bbc-news",
+    "type": "everything",
+    "articles": [
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "19/01/2025 04:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzw08g",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-19T04:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "19/01/2025 03:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzvwjb",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-19T03:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "19/01/2025 02:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzvrs6",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-19T02:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC World Service",
+            "title": "The Coming Storm: Inaugrutaion",
+            "description": "America through the looking glass, a world where nothing is as it seems. Gabriel Gatehouse follows a cast of characters who have propelled Trump into the White House – twice. Many of them are now set to take power and inject their reality-bending world views …",
+            "url": "https://www.bbc.co.uk/programmes/p0kkfx50",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p0jrtrdr.jpg",
+            "publishedAt": "2025-01-19T01:30:00Z",
+            "content": "America through the looking glass, a world where nothing is as it seems. Gabriel Gatehouse follows a cast of characters who have propelled Trump into the White House twice. Many of them are now set t… [+131 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "19/01/2025 01:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzvn12",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-19T01:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "19/01/2025 00:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzvj8y",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-19T00:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "Match of the Day: Highlights of games including Brentford v Liverpool",
+            "description": "Highlights from all of the day’s Premier League fixtures, including pacesetters Liverpool’s visit to Brentford, who have impressed with their free-flowing football this season.",
+            "url": "https://www.bbc.co.uk/iplayer/episode/m002764m/match-of-the-day-202425-18012025",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p0kk9xnp.jpg",
+            "publishedAt": "2025-01-18T23:59:00Z",
+            "content": "Highlights from all of the days Premier League fixtures, including pacesetters Liverpools visit to Brentford, who have impressed with their free-flowing football this season. More"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "18/01/2025 23:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzvdjt",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-18T23:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "Amy Walker",
+            "title": "Sophie, Duchess of Edinburgh, marks 60th birthday in new portrait",
+            "description": "The picture of a relaxed looking Sophie was taken by fashion photographer Christina Ebenezer.",
+            "url": "https://www.bbc.co.uk/news/articles/c5ye446vv7no",
+            "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/79a6/live/383f5540-d5e0-11ef-87df-d575b9a434a4.jpg",
+            "publishedAt": "2025-01-18T22:25:43Z",
+            "content": "The photo, taken at Bagshot Park, shows the duchess wearing a black turtleneck jumper and a pleated cream skirt.\r\nSophie's public profile has grown in recent years, having been hailed as a dependable… [+467 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "Netanyahu says Israel 'reserves right to return to war'",
+            "description": "Israel's prime minister, Benjamin Netanyahu, says his country reserved the right to go back to war in Gaza if the negotiations for a second phase of the ceasefire are fruitless. \n\nAlso on the programme: pro-Trump and anti-Trump demonstrators are making their …",
+            "url": "https://www.bbc.co.uk/programmes/w172zb9b90js0jj",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p0kkmb07.jpg",
+            "publishedAt": "2025-01-18T22:23:00Z",
+            "content": "Israel's prime minister, Benjamin Netanyahu, says his country reserved the right to go back to war in Gaza if the negotiations for a second phase of the ceasefire are fruitless. \r\nAlso on the program… [+337 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "18/01/2025 22:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzv8sp",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-18T22:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "18/01/2025 21:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzv51k",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-18T21:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "Rachel Looker",
+            "title": "Thousands hold anti-Trump rally in Washington before inauguration",
+            "description": "The march took place ahead of Trump's arrival to the nation's capital as he prepares to be sworn in on Monday.",
+            "url": "https://www.bbc.co.uk/news/articles/c9831lrn6nzo",
+            "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/05a7/live/8e771160-d5cb-11ef-a825-33052ed7b1ff.jpg",
+            "publishedAt": "2025-01-18T21:04:50Z",
+            "content": "The groups behind the march are described on its website as holding \"intersecting identities\" and having \"varied issue-based interests\" with different causes such as climate change, immigration and w… [+692 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "Alex Boyd",
+            "title": "Fuel tanker explosion kills 77 people in Suleja area of Nigeria",
+            "description": "People had rushed to collect fuel from the tanker after it overturned in a crash.",
+            "url": "https://www.bbc.co.uk/news/articles/c17eqedkwz9o",
+            "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/23ef/live/dfee1580-d5d4-11ef-87df-d575b9a434a4.jpg",
+            "publishedAt": "2025-01-18T20:14:12Z",
+            "content": "Those injured in Saturday's explosion are being treated in nearby hospitals, the emergency management agency said.\r\nNigeria has seen a number of similar incidents in recent months.\r\nTwo weeks ago, a … [+579 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "18/01/2025 20:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzv19f",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-18T20:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "18/01/2025 19:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrztxk9",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-18T19:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "18/01/2025 18:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrztst5",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-18T18:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "18/01/2025 17:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrztp21",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-18T17:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "Michelle Roberts",
+            "title": "Contraceptive dilemma: Why some women are ditching pills and coils for fertility apps",
+            "description": "Some women are opting for fertility tracking apps to avoid mood swings and weight gain on \"hormonal\" contraception.",
+            "url": "https://www.bbc.co.uk/news/articles/c93lq2w5n44o",
+            "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/6bb9/live/202def90-d3fe-11ef-bcce-a16f350759fd.png",
+            "publishedAt": "2025-01-18T17:05:52Z",
+            "content": "Emily, who is 39 and from Glasgow, had an abortion in 2021 after finding out she was pregnant while using a tracking app as contraception.\r\nIn 2018 she came off the pill which she'd been on since the… [+1685 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "18/01/2025 16:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrztk9x",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-18T16:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "18/01/2025 15:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrztfks",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-18T15:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "Lisa Young",
+            "title": "Number of whale sightings off Cornwall 'gone through the roof'",
+            "description": "A wildlife charity says rising numbers of humpback whales is \"one of the greatest recovery stories\".",
+            "url": "https://www.bbc.co.uk/news/articles/c8d99r31yymo",
+            "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/829e/live/fe309110-d4f0-11ef-9ebc-89cc26d89c1b.jpg",
+            "publishedAt": "2025-01-18T14:22:46Z",
+            "content": "A wildlife charity has said the number of whale sightings off the Cornish coast has \"gone through the roof\" in the last few years.\r\nBex Allen from Cornwall Wildlife Trust, said monthly surveys show a… [+458 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "18/01/2025 14:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzt9tn",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-18T14:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "Alex Boyd",
+            "title": "Iran: Two supreme court judges shot dead in Tehran",
+            "description": "The attacker reportedly used a handgun to shoot both judges, before killing himself.",
+            "url": "https://www.bbc.co.uk/news/articles/cy4mvllgd1mo",
+            "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/90ac/live/5fc97f30-d59c-11ef-be52-cfb0fb5f2514.png",
+            "publishedAt": "2025-01-18T13:38:56Z",
+            "content": "In a statement, the judiciary's media office described the attack as premeditated assassination.\r\nIt also said that, according to initial findings, the attacker had not been involved in any case cons… [+444 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC World Service",
+            "title": "The Fifth Floor: IVF and me",
+            "description": "When BBC Mundo journalist Ana Maria Roura found out she couldn't get pregnant, she decided to turn the camera on herself and document her struggle to become a parent through in vitro fertilisation, or IVF. Her documentary, Infertile, is available in Spanish a…",
+            "url": "https://www.bbc.co.uk/programmes/p0kjpk1d",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p0hqg7fh.jpg",
+            "publishedAt": "2025-01-18T13:30:00Z",
+            "content": "When BBC Mundo journalist Ana Maria Roura found out she couldn't get pregnant, she decided to turn the camera on herself and document her struggle to become a parent through in vitro fertilisation, o… [+304 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "18/01/2025 13:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzt62j",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-18T13:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "18/01/2025 12:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzt2bd",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-18T12:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "Maia Davies",
+            "title": "Digital driving licences to be introduced this year",
+            "description": "The government says technology should \"make people's lives easier\" but any system won't be mandatory.",
+            "url": "https://www.bbc.co.uk/news/articles/cgkjjkjy4p8o",
+            "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/80dc/live/daa5b990-d587-11ef-a539-11b54b0e7ff3.jpg",
+            "publishedAt": "2025-01-18T11:18:15Z",
+            "content": "\"Technology now makes it possible for digital identities to be more secure than physical ones, but we remain clear that they will not be made mandatory.\"\r\nThe virtual licences could be used at superm… [+1742 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "18/01/2025 11:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzsyl8",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-18T11:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "Anna Lamche",
+            "title": "Trump administration raids on illegal immigrants to start on day one",
+            "description": "Tom Homan, the incoming \"border tsar\", has promised a big raid on illegal immigrants in Chicago and elsewhere.",
+            "url": "https://www.bbc.co.uk/news/articles/cgrnn8zxdego",
+            "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/128b/live/89bcb910-d588-11ef-9502-835d7ef7ecca.jpg",
+            "publishedAt": "2025-01-18T10:11:06Z",
+            "content": "Homan expanded on the administration's plans on Fox News on Saturday, saying the deportations will not be \"raids\", but \"targeted enforcement operations\". \r\nHe described these efforts as \"well planned… [+3300 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "18/01/2025 10:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzstv4",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-18T10:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "18/01/2025 09:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzsq30",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-18T09:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "18/01/2025 08:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzslbw",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-18T08:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "Susie Rack",
+            "title": "Boy, 7, inspired parents' mission for patient gifts in Birmingham",
+            "description": "Their son Ethan's cancer has inspired Carl and Laura, from Brownhills, to raise £12,500 for toys.",
+            "url": "https://www.bbc.co.uk/news/articles/cdd96y175yjo",
+            "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/5417/live/3eed4e80-d426-11ef-943c-b5e53c85fbbb.png",
+            "publishedAt": "2025-01-18T07:18:03Z",
+            "content": "As Ethan went into remission, in December 2021, his parents decided to reach out to the community to help organise a local truck show as a treat.\r\n\"It was amazing the amount of money we raised,\" Carl… [+371 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "18/01/2025 07:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzsglr",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-18T07:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "18/01/2025 06:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzsbvm",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-18T06:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "18/01/2025 05:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzs73h",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-18T05:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "18/01/2025 04:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzs3cc",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-18T04:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "Hafsa Khalil",
+            "title": "Cameron Diaz's 10-year retirement 'best years' of her life",
+            "description": "The Holiday star says \"this is maybe the beginning\" as she returns to the big screen after a decade.",
+            "url": "https://www.bbc.co.uk/news/articles/c93qq2ywk6po",
+            "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/7138/live/55da6aa0-d567-11ef-94cb-5f844ceb9e30.jpg",
+            "publishedAt": "2025-01-18T04:04:57Z",
+            "content": "Talking about her hiatus, Diaz called it the \"best\" 10 years of her life.\r\n\"I was free to be [like] 'I'm a mum, I'm a wife, I'm living my life' - it was so lovely.\"\r\n\"Ten years in, this made sense fo… [+782 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "18/01/2025 03:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzrzm7",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-18T03:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "18/01/2025 02:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzrvw3",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-18T02:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC World Service",
+            "title": "BBC OS Conversations: Living through the Los Angeles fires",
+            "description": "Vast areas of Los Angeles have been destroyed since these fires began on 7 January. Thousands of homes and businesses have been lost, and tens of thousands of people have been forced to evacuate. We hear from Kelly, who had just minutes to gather a few posses…",
+            "url": "https://www.bbc.co.uk/programmes/p0kkfn0r",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p0kkfn1n.jpg",
+            "publishedAt": "2025-01-18T01:30:00Z",
+            "content": "Vast areas of Los Angeles have been destroyed since these fires began on 7 January. Thousands of homes and businesses have been lost, and tens of thousands of people have been forced to evacuate. We … [+540 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "18/01/2025 01:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzrr3z",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-18T01:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "18/01/2025 00:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzrmcv",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-18T00:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "17/01/2025 23:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzrhmq",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-17T23:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "Ukraine battles on ahead of Trump's inauguration",
+            "description": "During Donald Trump's election campaign, he claimed he could end the war in Ukraine in a single day. As his inauguration nears, the goal widens. Amid growing speculation that negotiations will happen, our Senior International Correspondent, Orla Guerin, repor…",
+            "url": "https://www.bbc.co.uk/programmes/w172zb9b90jp3mf",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p0hmjbnb.jpg",
+            "publishedAt": "2025-01-17T22:16:00Z",
+            "content": "During Donald Trump's election campaign, he claimed he could end the war in Ukraine in a single day. As his inauguration nears, the goal widens. Amid growing speculation that negotiations will happen… [+324 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "17/01/2025 22:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzrcwl",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-17T22:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "David Mercer",
+            "title": "US grounds SpaceX's Starship after test flight explosion",
+            "description": "The rocket's upper stage disintegrated over the Caribbean, forcing airline flights to alter course.",
+            "url": "https://www.bbc.co.uk/news/articles/cx2yyxrz9kvo",
+            "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/d8ac/live/3d3d8220-d517-11ef-87df-d575b9a434a4.jpg",
+            "publishedAt": "2025-01-17T21:09:53Z",
+            "content": "Starship is the biggest, most powerful rocket ever built, and is key to Musk's ambitions of colonising Mars.\r\nThursday's uncrewed launch was Starship's seventh test mission, and the first involving a… [+324 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "17/01/2025 21:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzr84g",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-17T21:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "17/01/2025 20:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzr4db",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-17T20:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "17/01/2025 19:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzr0n6",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-17T19:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC Radio 4",
+            "title": "The News Quiz: Ep 1. Checked Facts & Unfettered Fictions",
+            "description": "This week on The News Quiz, Andy Zaltzman is joined by Geoff Norcott, Paul Sinha, Angela Barnes and Anushka Asthana to unpack the week's new stories. The panel look into Donald Trump's international ambitions, Keir Starmer looking ahead to the not-too-distant…",
+            "url": "https://www.bbc.co.uk/programmes/p0kgw79s",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p0khq7wn.jpg",
+            "publishedAt": "2025-01-17T19:00:00Z",
+            "content": "This week on The News Quiz, Andy Zaltzman is joined by Geoff Norcott, Paul Sinha, Angela Barnes and Anushka Asthana to unpack the week's new stories. The panel look into Donald Trump's international … [+482 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "17/01/2025 18:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzqwx2",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-17T18:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "Bernd Debusmann Jr",
+            "title": "Donald Trump's inauguration moved indoors due to 'dangerous' cold",
+            "description": "The last president to be sworn-in indoors was Ronald Reagan in 1985, when cold weather also plagued the US Capitol.",
+            "url": "https://www.bbc.co.uk/news/articles/ceq9917rl18o",
+            "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/349e/live/47afed90-d4f6-11ef-8f2d-bbab2d547ebb.jpg",
+            "publishedAt": "2025-01-17T17:17:11Z",
+            "content": "Ahead of the inauguration, organisers had said that about 220,000 tickets would be distributed to watch the event's on the grounds of the US Capitol. \r\nThose without tickets would also have been able… [+1122 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "17/01/2025 17:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzqs4y",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-17T17:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "Malu Cursino",
+            "title": "Starmer vows to fight 'poison' of antisemitism during Auschwitz visit",
+            "description": "Sir Keir, who is in Poland for defence and security talks, said \"nothing\" could have prepared him for the horror of what he had seen.",
+            "url": "https://www.bbc.co.uk/news/articles/c1lvvqn68dlo",
+            "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/0161/live/6f3bd880-d4ef-11ef-94cb-5f844ceb9e30.jpg",
+            "publishedAt": "2025-01-17T16:49:47Z",
+            "content": "The prime minister condemned the lack of consistency when people use the phrase \"never again\", as people rightly condemn the persecution of Jewish people during World War Two, but fail to call out an… [+1439 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "Israeli cabinet meets to approve ceasefire",
+            "description": "The Israeli cabinet is meeting to approve the Gaza ceasefire and hostage release agreement. Some relatives of the hostages say it should have come months ago, but several ministers have threatened to resign if it is ratified. We hear from Jerusalem and from G…",
+            "url": "https://www.bbc.co.uk/programmes/w172zb9b90jn8dj",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p0kkcrlq.jpg",
+            "publishedAt": "2025-01-17T16:13:00Z",
+            "content": "The Israeli cabinet is meeting to approve the Gaza ceasefire and hostage release agreement. Some relatives of the hostages say it should have come months ago, but several ministers have threatened to… [+569 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "17/01/2025 16:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzqndt",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-17T16:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "17/01/2025 15:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzqjnp",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-17T15:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "The Football News Show",
+            "description": "As Tottenham sit 14th in the Premier League, how can Ange Postecoglou and his side overcome their inconsistent form? And are the fans really that worried?",
+            "url": "https://www.bbc.co.uk/iplayer/episode/p0kgwd24/the-football-news-show-are-tottenham-really-in-trouble",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p0kkcvf4.jpg",
+            "publishedAt": "2025-01-17T15:00:00Z",
+            "content": "As Tottenham sit 14th in the Premier League, how can Ange Postecoglou and his side overcome their inconsistent form? And are the fans really that worried?"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "Simon Jack & Tom Espiner",
+            "title": "IMF warns Trump economic policy threatens global disruption",
+            "description": "Trump's policies could benefit the US, but not the rest of the world, the IMF says",
+            "url": "https://www.bbc.co.uk/news/articles/cglyynp44g4o",
+            "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/4039/live/a3ef7b20-d4d8-11ef-9789-03dbac2525e2.jpg",
+            "publishedAt": "2025-01-17T14:18:19Z",
+            "content": "The IMF predicted \"stable, albeit lacklustre\" global growth of 3.3% in both 2025 and 2026, below a historical average of 3.7%.\r\nIts 2025 forecast was largely unchanged from a previous one, mainly bec… [+1598 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "17/01/2025 14:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzqdxk",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-17T14:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "17/01/2025 13:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzq95f",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-17T13:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "Zahra Fatima",
+            "title": "Jamie Theakston says he is 'cancer free' on return to radio show",
+            "description": "The radio host revealed doctors warned him there was a one-in-six chance he might never talk again.",
+            "url": "https://www.bbc.co.uk/news/articles/c4gxxzxx55yo",
+            "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/bfab/live/06fd6e60-d4c6-11ef-bbb4-0703dc3c2b2c.jpg",
+            "publishedAt": "2025-01-17T12:20:48Z",
+            "content": "Theakston said his diagnosis was an \"enormous shock\" after initially thinking it was just a \"sore throat\".\r\n\"And when I was told, 'Oh, it's probably cancer', just, literally, I just didn't even know … [+601 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "17/01/2025 12:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzq5f9",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-17T12:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "Bbc News",
+            "title": "Drone footage shows fire at one of world's largest battery plants",
+            "description": "The Moss Landing power plant, in California, was evacuated, as were people in the surrounding area.",
+            "url": "https://www.bbc.co.uk/news/videos/ce855z6z1d5o",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/06db/live/03a16890-d4ba-11ef-94cb-5f844ceb9e30.jpg",
+            "publishedAt": "2025-01-17T11:37:34Z",
+            "content": "A fire has broken out at a Californian power plant housing one of the largest battery energy storage facilities in the world. \r\nThe blaze began in a building containing lithium-ion batteries on Thurs… [+387 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "17/01/2025 11:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzq1p5",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-17T11:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "Kevin Peachey",
+            "title": "Mortgage rules could be eased to boost lending",
+            "description": "The £100 limit on contactless cards could also be scrapped, as regulators respond to the prime minister's plea.",
+            "url": "https://www.bbc.co.uk/news/articles/cdryy33v13ko",
+            "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/2b9e/live/ec371ac0-d4b8-11ef-beca-ad1c2b1f2905.jpg",
+            "publishedAt": "2025-01-17T10:42:37Z",
+            "content": "Prime Minister Sir Keir Starmer, the chancellor and business secretary wrote to the UK's main regulators in December asking them to come up with ideas for reform that could boost economic growth.\r\nTh… [+1088 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "17/01/2025 10:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzpxy1",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-17T10:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "Bbc News",
+            "title": "Acting legend Dame Joan Plowright dies at 95",
+            "description": "She was one of Britain's most acclaimed stage and screen stars and the widow of Sir Laurence Olivier.",
+            "url": "https://www.bbc.co.uk/news/articles/cwyppre55gyo",
+            "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/14cf/live/e3e4d330-d4b8-11ef-9fd6-0be88a764111.jpg",
+            "publishedAt": "2025-01-17T10:01:40Z",
+            "content": "Born in Scunthorpe, Plowright became a leading lady in London's West End in the 1950s, and first appeared opposite Olivier in John Osborne's The Entertainer at the Royal Court in 1957.\r\nHe was still … [+1021 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "17/01/2025 09:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzpt5x",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-17T09:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "Samantha Granville",
+            "title": "Trump names Gibson, Stallone and Voight Hollywood ambassadors",
+            "description": "The president-elect says the envoys will bring foreign business back to Hollywood but it's unclear what their roles will involve.",
+            "url": "https://www.bbc.co.uk/news/articles/cvg44wpzx12o",
+            "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/6e6d/live/17bddaa0-d45d-11ef-a777-d1a42f055885.jpg",
+            "publishedAt": "2025-01-17T08:32:32Z",
+            "content": "It's been a difficult few years for Hollywood with the Covid pandemic, multiple labour strikes, and competition with streaming services.\r\nLucas Shaw, a long-time Hollywood analyst, does not believe t… [+2434 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "17/01/2025 08:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzppfs",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-17T08:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "Alpesh Karkare",
+            "title": "Saif Ali Khan: Man detained over knife attack on Bollywood actor",
+            "description": "The actor was attacked by an unidentified man at his house in India's Mumbai city on Thursday.",
+            "url": "https://www.bbc.co.uk/news/articles/c0qwwn04j03o",
+            "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/6df2/live/e808d930-d49e-11ef-a70a-7188cb9abb89.jpg",
+            "publishedAt": "2025-01-17T07:46:07Z",
+            "content": "A scuffle soon broke out, during which Ms Philip was injured. Meanwhile, the nanny fled the room. \r\nAccording to the nurse's statement, Khan and his wife, actress Kareena Kapoor, rushed to the room a… [+1183 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "Rebecca Morelle",
+            "title": "Pompeii: Spectacular new discoveries unearthed include private spa",
+            "description": "A huge private bathhouse is found after lying hidden for 2,000 years under volcanic rock and ash.",
+            "url": "https://www.bbc.co.uk/news/articles/c15zgvnvk4do",
+            "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/e6db/live/50f170d0-d42a-11ef-94cb-5f844ceb9e30.jpg",
+            "publishedAt": "2025-01-17T07:19:16Z",
+            "content": "Those lucky enough to use the suite of bathing rooms would have undressed in a changing room with vibrant red walls and a mosaic floor dotted with geometric patterns inlaid with marble from across th… [+799 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "17/01/2025 07:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzpkpn",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-17T07:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "17/01/2025 06:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzpfyj",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-17T06:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "17/01/2025 05:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzpb6d",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-17T05:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "17/01/2025 04:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzp6g8",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-17T04:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "Justin Rowlatt And Mark Poynting",
+            "title": "Planet-warming carbon dioxide levels rose more than ever in 2024",
+            "description": "The record rise is incompatible with keeping global warming to 1.5C according to the Met Office.",
+            "url": "https://www.bbc.co.uk/news/articles/c30dn5dn53jo",
+            "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/aa74/live/3f33cbc0-d486-11ef-87df-d575b9a434a4.jpg",
+            "publishedAt": "2025-01-17T03:13:00Z",
+            "content": "The record increase adds to concerns that the natural world may become less able to absorb planet-warming gases in the long-term.\r\nThe Arctic tundra is being transformed into an overall source of CO2… [+841 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "17/01/2025 03:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzp2q4",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-17T03:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "17/01/2025 02:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrznyz0",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-17T02:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC World Service",
+            "title": "Heart and Soul: Kaddish - why we pray for the dead",
+            "description": "Elie Wiesel, Nobel Prize winner and Holocaust survivor, once told Michael Goldfarb of people going to their deaths at Auschwitz asking who will say Kaddish for me? Kaddish is the Jewish prayer for the dead. On the 80th anniversary of Auschwitz' liberation Mic…",
+            "url": "https://www.bbc.co.uk/programmes/p0kjn2qy",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p0kjn2tn.jpg",
+            "publishedAt": "2025-01-17T01:30:00Z",
+            "content": "Elie Wiesel, Nobel Prize winner and Holocaust survivor, once told Michael Goldfarb of people going to their deaths at Auschwitz asking who will say Kaddish for me? Kaddish is the Jewish prayer for th… [+235 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "17/01/2025 01:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrznv6w",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-17T01:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "Brandon Drenon",
+            "title": "Donald Trump's and JD Vance's official portraits released",
+            "description": "The portraits of the president-elect and the incoming vice-president \"go hard\" their press team said.",
+            "url": "https://www.bbc.co.uk/news/articles/cly443wxl78o",
+            "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/4616/live/d710a6a0-d4b0-11ef-9fd6-0be88a764111.jpg",
+            "publishedAt": "2025-01-17T01:02:39Z",
+            "content": "The portrait Trump opted for this time differs markedly with the image used in 2017, when he first became president.\r\nWhile he wears similar attire, he smiles broadly at the camera in the earlier por… [+439 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "Bbc News",
+            "title": "SpaceX Starship test fails after Texas launch",
+            "description": "Officials at Elon Musk's company said the upper stage was lost, minutes after it launched.",
+            "url": "https://www.bbc.co.uk/news/articles/cwy77x09y0po",
+            "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/ea3a/live/4b9d64f0-d4b5-11ef-87df-d575b9a434a4.jpg",
+            "publishedAt": "2025-01-17T00:42:00Z",
+            "content": "Unverified footage shared on social media shows what appears to be the rocket breaking up in flames.\r\nAnd footage showed orange balls of light flying across the sky over the Haitian capital of Port-A… [+1888 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "17/01/2025 00:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrznqgr",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-17T00:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "16/01/2025 23:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrznlqm",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-16T23:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "Israeli minister threatens to quit over ceasefire",
+            "description": "Itamar Ben-Gvir is a far right politician who, if he does resign, could bring down the Israeli government. He says a ceasefire would be a win for Hamas,\n\nAlso on the programme: the American director David Lynch, whose work included films like The Elephant Man…",
+            "url": "https://www.bbc.co.uk/programmes/w172zb9b90jl6qb",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p0kk7l2t.jpg",
+            "publishedAt": "2025-01-16T22:49:00Z",
+            "content": "Itamar Ben-Gvir is a far right politician who, if he does resign, could bring down the Israeli government. He says a ceasefire would be a win for Hamas,\r\nAlso on the programme: the American director … [+484 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "16/01/2025 22:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzngzh",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-16T22:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "16/01/2025 21:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrznc7c",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-16T21:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "16/01/2025 20:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzn7h7",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-16T20:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "Hugh Pym",
+            "title": "'There's no dignity in this' - A&E under pressure",
+            "description": "While the number of patients with flu are declining, a cold snap has again placed nurses under extreme stress.",
+            "url": "https://www.bbc.co.uk/news/articles/c93l83g5lkeo",
+            "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/b22a/live/aaf1ab00-d433-11ef-9fd6-0be88a764111.jpg",
+            "publishedAt": "2025-01-16T19:31:31Z",
+            "content": "\"I've got no oxygen\", cries emergency department nurse Lisa Blackwell.\r\nShe calls for more supplies just as three ambulances are about to arrive at Chesterfield Hospital in Derbyshire.\r\nThe new state… [+1609 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "16/01/2025 19:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzn3r3",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-16T19:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "Bbc News",
+            "title": "Film director David Lynch dies at 78, family says",
+            "description": "The Oscar-nominated writer and filmmaker is famous for the film Mulholland Drive and the TV series Twin Peaks.",
+            "url": "https://www.bbc.co.uk/news/articles/cly9vymjexvo",
+            "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/28ad/live/13862430-d438-11ef-b20c-8bcfada6218e.jpg",
+            "publishedAt": "2025-01-16T18:52:11Z",
+            "content": "David Lynch, the writer-filmmaker whose works include Mulholland Drive and Twin Peaks, has died aged 78.\r\nLynch's death was announced on his Facebook page by his family.\r\n\"There's a big hole in the w… [+714 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "16/01/2025 18:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzmzzz",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-16T18:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "16/01/2025 17:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzmw7v",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-16T17:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "16/01/2025 16:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzmrhq",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-16T16:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "Gaza ceasefire: Israeli cabinet meeting delayed",
+            "description": "An Israeli cabinet meeting to ratify the ceasefire agreement for Gaza between Israel and Hamas is delayed, with the government accusing Hamas of reneging on the terms. We hear from a member of the governing coalition and from Hamas, which denies Israel's accu…",
+            "url": "https://www.bbc.co.uk/programmes/w172zb9b90jkchf",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p0kk3frc.jpg",
+            "publishedAt": "2025-01-16T15:23:00Z",
+            "content": "An Israeli cabinet meeting to ratify the ceasefire agreement for Gaza between Israel and Hamas is delayed, with the government accusing Hamas of reneging on the terms. We hear from a member of the go… [+596 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "16/01/2025 15:01 GMT",
+            "description": "The latest five minute news bulletin from BBC World Service.",
+            "url": "https://www.bbc.co.uk/programmes/w172zgfjtrzmmrl",
+            "urlToImage": "https://ichef.bbci.co.uk/images/ic/1200x675/p060dh18.jpg",
+            "publishedAt": "2025-01-16T15:06:00Z",
+            "content": "The latest five minute news bulletin from BBC World Service."
+        }
+    ]
+}
