@@ -9,7 +9,7 @@ import Foundation
 
 class NewsSources: ObservableObject {
     
-    @Published var contentSource: String = "reuters"
+    @Published var contentSource: String = "bbc-news"
     @Published var contentType: String = "top-headlines"
     
     var sourceTitle: String {

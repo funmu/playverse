@@ -38,6 +38,18 @@ struct NewsItem: Codable {
     // var content: String?
     // var sourceName: String?
     
+    init( title: String, description: String,
+          url: String, urlToImage: String?,
+          author: String, publishedAt: String) {
+        
+        self.title = title
+        self.description = description
+        self.url = url
+        self.urlToImage = urlToImage
+        self.author = author
+        self.publishedAt = publishedAt
+    }
+    
     func toText() -> String {
         return "\(title)\n\n\(description ?? "")\n\(url)"
     }
@@ -69,8 +81,8 @@ class NewsListModel: ObservableObject {
         
         let newsProvider = NewsConfig.shared.newsProvider
         let urlForNews = "\(newsProvider.urlPrefix)\(type)?sources=\(source)&apiKey=\(newsProvider.apiKey)"
-        NewsConfig.logger.info("Fetching news from \(source) for \(type)")
-        NewsConfig.logger.info("URL is\(urlForNews)")
+        NewsConfig.logger.info("Fetching news from [\(source)] for [\(type)]")
+//        NewsConfig.logger.info("URL is\(urlForNews)")
         
         guard let url = URL(string: urlForNews) else {
             NewsConfig.logger.error("Invalid NEWS URL: \(urlForNews)")

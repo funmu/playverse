@@ -8,53 +8,47 @@
 import SwiftUI
 import SwiftData
 
-struct NewsDetailView: View {
-    
-    let item: NewsItem
-    
-    var body: some View {
-        VStack {
-            Text( item.title)
-                .foregroundColor( .accentColor)
-                .font(.title)
-                .padding( .top, 10)
-            Text( item.url)
-                .foregroundColor( .blue)
-            Spacer()
-            Text( item.description ?? "")
-                .foregroundColor( .secondary)
-        }
-    }
-}
 
 struct NewsListView: View {
     
     @ObservedObject private var newsListModel = NewsListModel()
 
     var body: some View {
-        NavigationView {
-            List( newsListModel.newsItems, id: \.url) { item in
-                NavigationLink {
-                    // ToDo: add more elaborate view of news article
-                    NewsDetailView( item: item)
-                    Divider()
-                } label: {
-                    Text("\(item.title)")
+        VStack {
+//            HStack{
+//                Text( NewsConfig.shared.newsSources.sourceTitle)
+//                    .font( .title2)
+//                    .foregroundColor(.accentColor)
+//                    .padding(.leading, 20)
+//                Spacer()
+//            }
+            
+            NavigationView {
+                List( newsListModel.newsItems, id: \.url) { item in
+                    NavigationLink {
+                        // ToDo: add more elaborate view of news article
+                        NewsDetailView( item: item)
+                        Divider()
+                    } label: {
+                        Text("\(item.title)")
+                    }
+                    .padding(.leading, -10)
+                    .padding(.trailing, -10)
                 }
-            }
 #if os(macOS)
-            .navigationSplitViewColumnWidth(min: 180, ideal: 200)
+                .navigationSplitViewColumnWidth(min: 180, ideal: 200)
 #endif
-        }
-        .onAppear() {
-            self.newsListModel.fetchNewsItems(
-                forSource: NewsConfig.shared.newsSources.contentSource,
-                withType: NewsConfig.shared.newsSources.contentType
+            }
+            .onAppear() {
+                self.newsListModel.fetchNewsItems(
+                    forSource: NewsConfig.shared.newsSources.contentSource,
+                    withType: NewsConfig.shared.newsSources.contentType
                 )
+            }
+            //        .navigationTitle( NewsConfig.shared.newsSources.sourceTitle)
+            //        .navigationBarTitle( NewsConfig.shared.newsSources.sourceTitle)
+            //        .navigationBarTitleDisplayMode(.inline) // Display the title inline
         }
-        .navigationTitle( NewsConfig.shared.newsSources.sourceTitle)
-        .navigationBarTitle( NewsConfig.shared.newsSources.sourceTitle)
-        .navigationBarTitleDisplayMode(.inline) // Display the title inline
     }
 }
 
@@ -112,4 +106,10 @@ struct NewsListViewFromSavedData: View {
             }
         }
     }
+}
+
+#Preview {
+    NewsListView()
+        .modelContainer(for: Item.self, inMemory: true)
+        .environment(\.colorScheme, .dark)
 }
