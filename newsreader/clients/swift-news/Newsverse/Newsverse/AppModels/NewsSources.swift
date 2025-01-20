@@ -45,4 +45,22 @@ class NewsSources: ObservableObject {
             "techcrunch"    : "TechCrunch",
             "gizmodo"       : "Gizmodo",
     ]
+    
+    init() {
+        load()
+    }
+    
+    func load() {
+        // load up from the past saved value if any
+        
+        self.contentType = UserDefaults.standard.string( forKey: "contentType") ?? "top-headlines"
+        self.contentSource = UserDefaults.standard.string( forKey: "contentSource") ?? "reuters"
+    }
+
+    func save() {
+        // save for the future use
+        UserDefaults.standard.set( self.contentType, forKey: "contentType")
+        UserDefaults.standard.set( self.contentSource, forKey: "contentSource")
+    }
+
 }

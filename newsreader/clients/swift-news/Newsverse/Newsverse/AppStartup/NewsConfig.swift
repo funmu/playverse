@@ -14,7 +14,7 @@ class NewsConfig {
     static var shared: NewsConfig = NewsConfig()
     
     var appInfo: AppInfo = AppInfo()
-    var newsSources: NewsSources = NewsSources()
+    @Published var newsSources: NewsSources = NewsSources()
     var newsProvider: NewsListProvider
         = NewsListProvider( url: "http://localhost:8080/", apiKey: "") // testing endpoint
         

@@ -68,6 +68,9 @@ struct SettingsView: View {
                 NewsConfig.shared.newsSources.contentSource = self.sourceKeys[ self.contentSourceIndex]
                 NewsConfig.logger.info( "Updating News Content Source to \(NewsConfig.shared.newsSources.contentSource)")
             }
+            
+            // Save the information in user defaults for the future
+            NewsConfig.shared.newsSources.save()
         }
     }
 }

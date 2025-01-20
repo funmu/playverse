@@ -13,6 +13,9 @@ struct NewsListView: View {
     
     @ObservedObject private var newsListModel = NewsListModel()
     @ObservedObject private var newsSources = NewsConfig.shared.newsSources
+    
+    private var newsSourceToFetch:String { return newsSources.contentSource }
+    private var newsTypeToFetch:String { return newsSources.contentType }
 
     var body: some View {
         VStack {
@@ -38,8 +41,8 @@ struct NewsListView: View {
                 }
                 .onAppear() {
                     self.newsListModel.fetchNewsItems(
-                        forSource: newsSources.contentSource,
-                        withType: newsSources.contentType
+                        forSource: self.newsSourceToFetch,
+                        withType: self.newsTypeToFetch
                     )
                 }
                 .toolbar {

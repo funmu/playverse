@@ -86,8 +86,8 @@ class NewsListModel: ObservableObject {
         NewsConfig.logger.info("Fetching news from [\(source)] for [\(type)]")
 //        NewsConfig.logger.info("URL is\(urlForNews)")
         
-        if ( (source.isEmpty || (source == newsFromSource)
-              || type.isEmpty || (type == newsFromType)) ) {
+        if ( source.isEmpty || type.isEmpty
+              || ((source == newsFromSource) && (type == newsFromType)) ) {
             
             NewsConfig.logger.debug("Input parameters are similar to what we have already. Do not fetch news.")
             return
@@ -121,7 +121,12 @@ class NewsListModel: ObservableObject {
                 
                 NewsConfig.logger.info( "\(decodedNewsItems.totalResults) NewsItems downloaded with status \(decodedNewsItems.status)")
                 
+                
                 DispatchQueue.main.async {
+                    // update where the news was obtained last
+                    self.newsFromSource = source
+                    self.newsFromType = type
+
                     // setting the newsItems will publish changes for upstream UI to pick it up
                     self.newsItems = decodedNewsItems.articles
                 }
