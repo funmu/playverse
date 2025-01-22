@@ -22,7 +22,7 @@ class CustomComponent(Component):
 
     # get the latest news for given area of scope
     @operation()
-    def latest( self, scope: str="technology") -> str: pass
+    def latest( self, source: str = "reuters", scope: str="technology") -> str: pass
 
     # get the headlines by country
     @operation()
@@ -34,4 +34,4 @@ class CustomComponent(Component):
     
     # get the headlines by source; default is from reuters
     @operation()    
-    def headlinesBySource( self, source="reuters", scope=""): pass
+    def headlinesBySource( self, source: str ="reuters", scope: str = ""): pass

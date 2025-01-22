@@ -6,3 +6,4 @@ __pycache__/
 /newsreader/samples
 /facenews/news_ui/.next
 /facenews/news_ui/node_modules
+newsreader/newsapi/news_api/providers/headline_sources.json
