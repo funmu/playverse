@@ -62,11 +62,11 @@ struct NewsListView: View {
                         withType: self.newsTypeToFetch
                     )
                 }
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        ShowSettingsButton()
-                    }
-                }
+//                .toolbar {
+//                    ToolbarItem(placement: .navigationBarTrailing) {
+//                        ShowSettingsButton()
+//                    }
+//                }
                 .navigationBarTitle( newsSources.sourceTitle)
                 .navigationBarTitleDisplayMode(.inline) // Display the title inline
 #if os(macOS)

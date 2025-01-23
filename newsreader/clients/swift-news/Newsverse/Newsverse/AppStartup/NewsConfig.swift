@@ -57,10 +57,10 @@ class NewsConfig {
 
 class AppInfo {
     
-    var appName: String = "Newsverse"
-    var appVersion: String = "0.0.1"
-    var appBuild: String = "0"
-    var appGroupID: String = "com.verse.newsverse"
+    let appName: String = Bundle.main.infoDictionary!["CFBundleDisplayName"] as! String
+    let appVersion: String =  Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String
+    let appBuild: String = Bundle.main.infoDictionary!["CFBundleVersion"] as! String
+    let appGroupID: String = Bundle.main.infoDictionary!["CFBundleIdentifier"] as! String
 }
 
 

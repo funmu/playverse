@@ -55,10 +55,12 @@ struct ShareButton: View {
     }
     
     func shareNewsButton() {
-        let url = URL( string: item.url)
+        // let url = URL( string: item.url)
+        
+        let textToShare = "\(item.title)\n\(item.url)\n"
 
         let avc = UIActivityViewController(
-            activityItems: [url!],
+            activityItems: [textToShare],
             applicationActivities: nil)
         
         // Present the activity view controller

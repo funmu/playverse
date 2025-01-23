@@ -17,60 +17,66 @@ struct SettingsView: View {
     
     var body: some View {
                     
-        NavigationView {
-            Form {
-                // enable content type selector
-                Section( header: Text( "News Type")) {
-                    Picker( selection: $contentTypeIndex,
-                            label: Text("")
-                            ) {
-                        Text( "Top Headlines").tag(0)
-                        Text( "Everything").tag(1)
-                    }.pickerStyle(SegmentedPickerStyle())
-                }
-                
-                // enable content source selector type 2
-                Section( header: Text( "News Sources")) {
-                    Picker( selection: $contentSourceIndex,
-                            label: Text("Get News from")) {
-                        ForEach(sourceValues.indices, id: \.self) { index in
-                            Text(sourceValues[index])
-                        }
+        VStack {
+            NavigationView {
+                Form {
+                    // enable content type selector
+                    Section( header: Text( "News Type")) {
+                        Picker( selection: $contentTypeIndex,
+                                label: Text("")
+                        ) {
+                            Text( "Top Headlines").tag(0)
+                            Text( "Everything").tag(1)
+                        }.pickerStyle(SegmentedPickerStyle())
+                    }
+                    
+                    // enable content source selector type 2
+                    Section( header: Text( "News Sources")) {
+                        Picker( selection: $contentSourceIndex,
+                                label: Text("Get News from")) {
+                            ForEach(sourceValues.indices, id: \.self) { index in
+                                Text(sourceValues[index])
+                            }
+                        }.pickerStyle( .navigationLink)
                     }
                 }
+                .padding()
+                .navigationBarTitle( "Settings")
+                .navigationBarTitleDisplayMode( .inline)
             }
-            .padding()
-            .navigationBarTitle( "Settings")
-            .navigationBarTitleDisplayMode( .inline)
-        }
-        .onAppear() {
-            
-            // select the right source index
-            if ( self.contentSourceIndex < 0) {
-                if let index = self.sourceKeys.firstIndex(of: NewsConfig.shared.newsSources.contentSource) {
-                    self.contentSourceIndex = index
+            .onAppear() {
+                
+                // select the right source index
+                if ( self.contentSourceIndex < 0) {
+                    if let index = self.sourceKeys.firstIndex(of: NewsConfig.shared.newsSources.contentSource) {
+                        self.contentSourceIndex = index
+                    }
+                } else {
+                    NewsConfig.shared.newsSources.contentSource = self.sourceKeys[ self.contentSourceIndex]
+                    NewsConfig.logger.info( "Updating News Content Source to \(NewsConfig.shared.newsSources.contentSource)")
                 }
-            } else {
-                NewsConfig.shared.newsSources.contentSource = self.sourceKeys[ self.contentSourceIndex]
-                NewsConfig.logger.info( "Updating News Content Source to \(NewsConfig.shared.newsSources.contentSource)")
             }
-            
-        }
-        .onDisappear() {
-
-            // update in the main thread, so the change gets propagated
-            NewsConfig.shared.newsSources.contentType
+            .onDisappear() {
+                
+                // update in the main thread, so the change gets propagated
+                NewsConfig.shared.newsSources.contentType
                 = (self.contentTypeIndex == 0)
                 ? NewsConfig.shared.newsSources.displayContentType[0]
                 : NewsConfig.shared.newsSources.displayContentType[1]
-            
-            if ( self.contentSourceIndex >= 0) {
-                NewsConfig.shared.newsSources.contentSource = self.sourceKeys[ self.contentSourceIndex]
+                
+                if ( self.contentSourceIndex >= 0) {
+                    NewsConfig.shared.newsSources.contentSource = self.sourceKeys[ self.contentSourceIndex]
+                }
+                
+                // Save the information in user defaults for the future
+                NewsConfig.shared.newsSources.save()
+                NewsConfig.logger.info( "SettingsView: onDisappear() completed ... ")
             }
-                        
-            // Save the information in user defaults for the future
-            NewsConfig.shared.newsSources.save()
-            NewsConfig.logger.info( "SettingsView: onDisappear() completed ... ")
+            
+            Spacer()
+            Text( "\(NewsConfig.shared.appInfo.appName) v\(NewsConfig.shared.appInfo.appVersion).\(NewsConfig.shared.appInfo.appBuild)")
+                .foregroundColor( .secondary)
+                .padding( .bottom, 8)
         }
     }
 }
