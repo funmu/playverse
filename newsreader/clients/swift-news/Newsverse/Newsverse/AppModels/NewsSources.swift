@@ -13,7 +13,10 @@ class NewsSources: ObservableObject {
     @Published var contentType: String = "top-headlines"
     
     var sourceTitle: String {
-        get { self.contentSources[self.contentSource] ?? self.contentSource }
+        get {
+            return (self.contentSources[self.contentSource] ?? self.contentSource)
+            + (self.contentType == "top-headlines" ? " (top)" : " (all)")
+        }
     }
     
     var displayContentType: [String] =
@@ -61,6 +64,9 @@ class NewsSources: ObservableObject {
         // save for the future use
         UserDefaults.standard.set( self.contentType, forKey: "contentType")
         UserDefaults.standard.set( self.contentSource, forKey: "contentSource")
+        NewsConfig.logger.info( "Updated and saved News Content Source to \(self.contentSource)")
+        NewsConfig.logger.info( "Updated and saved News Content type to \(self.contentType)")
+
     }
 
 }

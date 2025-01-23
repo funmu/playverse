@@ -13,7 +13,6 @@ struct SettingsView: View {
     @State private var contentTypeIndex: Int = 0
     
     let sourceKeys = NewsConfig.shared.newsSources.contentSources.map{ $0.key}
-
     let sourceValues = NewsConfig.shared.newsSources.contentSources.map{ $0.value}
     
     var body: some View {
@@ -58,19 +57,20 @@ struct SettingsView: View {
             
         }
         .onDisappear() {
+
+            // update in the main thread, so the change gets propagated
             NewsConfig.shared.newsSources.contentType
-            = (self.contentTypeIndex == 0)
-            ? NewsConfig.shared.newsSources.displayContentType[0]
-            : NewsConfig.shared.newsSources.displayContentType[1]
-            NewsConfig.logger.info( "Updating News Content type to \(NewsConfig.shared.newsSources.contentType)")
+                = (self.contentTypeIndex == 0)
+                ? NewsConfig.shared.newsSources.displayContentType[0]
+                : NewsConfig.shared.newsSources.displayContentType[1]
             
             if ( self.contentSourceIndex >= 0) {
                 NewsConfig.shared.newsSources.contentSource = self.sourceKeys[ self.contentSourceIndex]
-                NewsConfig.logger.info( "Updating News Content Source to \(NewsConfig.shared.newsSources.contentSource)")
             }
-            
+                        
             // Save the information in user defaults for the future
             NewsConfig.shared.newsSources.save()
+            NewsConfig.logger.info( "SettingsView: onDisappear() completed ... ")
         }
     }
 }

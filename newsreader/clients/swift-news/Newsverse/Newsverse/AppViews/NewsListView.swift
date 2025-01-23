@@ -26,6 +26,8 @@ struct NewsListView: View {
 //                    .padding(.leading, 20)
 //                Spacer()
 //            }
+//            Text( "News Source: \(newsSourceToFetch)")
+//            Text( "News Type: \(newsTypeToFetch)")
             
             NavigationView {
                 List( newsListModel.newsItems, id: \.url) { item in
@@ -40,6 +42,21 @@ struct NewsListView: View {
                     .padding(.trailing, -10)
                 }
                 .onAppear() {
+                    NewsConfig.logger.info( "ListView: onAppear() called ... ")
+                    self.newsListModel.fetchNewsItems(
+                        forSource: newsSources.contentSource,
+                        withType: newsSources.contentType
+                    )
+                }
+                .onChange(of: self.newsSourceToFetch) { _, _ in // Observe changes and recalc
+                    NewsConfig.logger.info( "ListView: onChange() for newsSource called ... ")
+                    self.newsListModel.fetchNewsItems(
+                        forSource: newsSources.contentSource,
+                        withType: newsSources.contentType
+                    )
+                }
+                .onChange(of: self.newsTypeToFetch) { _, _ in // Observe changes and recalc
+                    NewsConfig.logger.info( "ListView: onChange() for newsType called ... ")
                     self.newsListModel.fetchNewsItems(
                         forSource: self.newsSourceToFetch,
                         withType: self.newsTypeToFetch
