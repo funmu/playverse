@@ -71,6 +71,40 @@ struct ShareButton: View {
     }
 }
 
+class TimeHelper {
+
+    static private let dateFormatter = ISO8601DateFormatter()
+
+    static func formatTime(_ t: TimeInterval) -> String {
+        let days    = Int(t / (3600*24))
+        let hours   = Int(t.truncatingRemainder(dividingBy: (3600*24)) / 3600)
+//        let minutes = Int(t.truncatingRemainder(dividingBy: 3600) / 60)
+//        let seconds = Int(t.truncatingRemainder(dividingBy: 60))
+        let fmtTime: String
+            = String(format: (days > 0 ? " %2d days" : ""), days)
+            + String(format: (hours > 0 ? " %2d hours" : ""), hours)
+//            + String(format: "%2d minutes, %2d seconds", minutes, seconds)
+        return fmtTime
+    }
+    
+    static func parseDate(_ dateInfo: String) -> Date? {
+        
+        dateFormatter.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
+        
+        if let date = dateFormatter.date(from: dateInfo) {
+            return date
+        } else {
+            return nil
+        }
+    }
+    
+    static func timeIntervalFromCurrent(_ dateInfo: Date) -> TimeInterval {
+        let currentTime = Date()
+        let diffTime = currentTime.timeIntervalSince(dateInfo)
+        return diffTime
+    }
+}
+
 struct NewsDetailView: View {
     
     let item: NewsItem
@@ -95,12 +129,32 @@ struct NewsDetailView: View {
                 Text( item.url)
                     .foregroundColor( .blue)
             }
+            
+            HStack {
+                Text( "Published \(timeSince(item.publishedAt))")
+                    .foregroundColor( .secondary)
+                Spacer()
+            }
+            .padding( .bottom, 10)
+            .padding( .leading, 20)
+            
             Text( item.description ?? "")
                 .foregroundColor( .secondary)
                 .padding( 10)
             Spacer()
         }
         .navigationBarItems(trailing: ShareButton(item: item))
+    }
+    
+    private func timeSince(_ dateString: String?) -> String {
+        guard let dateString = dateString else { return "" }
+        let dateFormatter = ISO8601DateFormatter()
+        guard let dateInput = dateFormatter.date(from: dateString) else {
+            return "now"
+        }
+        
+        let timeDiff = TimeHelper.timeIntervalFromCurrent( dateInput)
+        return TimeHelper.formatTime( timeDiff) + " back"
     }
 }
 

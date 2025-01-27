@@ -67,7 +67,7 @@ struct NewsListView: View {
 //                        ShowSettingsButton()
 //                    }
 //                }
-                .navigationBarTitle( newsSources.sourceTitle)
+                .navigationBarTitle( newsSources.sourceTitle + " (\(newsListModel.newsItems.count))")
                 .navigationBarTitleDisplayMode(.inline) // Display the title inline
 #if os(macOS)
                 .navigationSplitViewColumnWidth(min: 180, ideal: 200)

@@ -82,7 +82,10 @@ class NewsListModel: ObservableObject {
     func fetchNewsItems(forSource source: String, withType type: String) {
         
         let newsProvider = NewsConfig.shared.newsProvider
-        let urlForNews = "\(newsProvider.urlPrefix)\(type)?sources=\(source)&apiKey=\(newsProvider.apiKey)"
+        var urlForNews = "\(newsProvider.urlPrefix)\(type)?sources=\(source)&apiKey=\(newsProvider.apiKey)"
+        if (type == "everything") {
+            urlForNews += "&sortBy=publishedAt" //  newest articles come first
+        }
         NewsConfig.logger.info("Fetching news from [\(source)] for [\(type)]")
 //        NewsConfig.logger.info("URL is\(urlForNews)")
         
